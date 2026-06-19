@@ -32,8 +32,6 @@ def mavenHome=tool name: "maven-3.9.0"
   }
  stage('Deploy to Tomcat') 
 {
-    if (env.BRANCH_NAME == 'dev') 
-    {
         withCredentials([usernamePassword(credentialsId: 'tomcat-cred-1', usernameVariable: 'TOMCAT_USER', passwordVariable: 'TOMCAT_PASS')]) 
         {
             sh """
@@ -43,10 +41,7 @@ def mavenHome=tool name: "maven-3.9.0"
             """
         }
     } 
-    else 
-    {
-        echo "Skipping deployment because branch is ${env.BRANCH_NAME}"
-    }
-}
+
+
 } // node ends here
       
