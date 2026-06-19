@@ -1,6 +1,13 @@
 //this is scripted-way pipeline
 node
 {
+  // tiggers pull scm for every one minute
+  properties([
+    pipelineTriggers([
+      pollSCM('* * * * *')
+    ])
+  ])
+  
 def mavenHome=tool name: "maven-3.9.0"
   stage('checkout')
   {
