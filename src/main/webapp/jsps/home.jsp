@@ -46,7 +46,7 @@
 <body>
 
 <header>
-     <h1> Hello WELCOME TO  DEVOPS AWS SRE NEW BATCH WILL START ON APRIL 19TH 6:45 AM JST, DEMO AT 7:30 AM IST</h1> 
+     <h1> Hello WELCOME TO  DEVOPS AWS SRE NEW BATCH WILL START ON APRIL 19TH 6:45 AM JST, DEMO AT 11:30 AM IST</h1> 
     <h3>Training | Development | Consulting | KKDEVOPS</h3>
 </header>
 
