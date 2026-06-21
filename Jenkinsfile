@@ -39,7 +39,7 @@ echo "build number: ${env.BUILD_NUMBER}"
       sh """
 
       curl -u kk:password \
---upload-file /var/lib/jenkins/workspace/test-pipeline/target/maven-web-application.war \
+--upload-file /var/lib/jenkins/workspace/jio-dev-pipeline/target/maven-web-application.war \
 "http://3.89.134.101:8080/manager/text/deploy?path=/maven-web-application&update=true"
           
         """
