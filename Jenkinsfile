@@ -37,7 +37,7 @@ def mavenHome=tool name: "maven-3.9.0"
             sh """
             curl -v -u $TOMCAT_USER:$TOMCAT_PASS \
             --upload-file ${env.WORKSPACE}/target/maven-web-application.war \
-            "http://54.224.72.95:8080/manager/text/deploy?path=/maven-web-application&update=true"
+            "http://3.89.134.101:8080/manager/text/deploy?path=/maven-web-application&update=true"
             """
         }
     } 
